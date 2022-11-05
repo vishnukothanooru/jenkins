@@ -1,0 +1,22 @@
+pipeline {
+ agent any 
+ stages {
+ stage('Build') { 
+ steps {
+ echo "building application"
+ }
+ }
+ stage('Test') { 
+ steps {
+ echo "add new commands"
+ }
+ }
+ stage('Deploy') { 
+ steps {
+  bat "dir"
+ bat "cd"
+ bat "ping www.google.com"
+ }
+ }
+ }
+}
